@@ -1,1 +1,1 @@
-# GATK
+# Genome Analysis Tookkit (GATK)
