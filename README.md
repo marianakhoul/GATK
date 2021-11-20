@@ -3,6 +3,8 @@ The GATK is the industry standard for identifying SNPs and indels in germline DN
 
 It is a collection of command-line tools for analyzing high-throughput seqiencing data with a primary focus on variant discovery.Tools can be used individually or chained together into complete workflows.
 
+This page contains the GATK best practice pipelines.
+
 Downloading [https://gatk.broadinstitute.org/hc/en-us/articles/360036194592-Getting-started-with-GATK4]
 
 
