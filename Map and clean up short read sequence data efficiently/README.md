@@ -8,7 +8,7 @@ If you have raw read data in BAM format with appropriate assigned read group fil
 
 ### Check for read group information
 
-These tags, when assigned appropriately, allow to differentiate not only samples, but also various technical features that are associated with artifacts. With this information in hand, it can mitigate the effects of those artifacts during the duplicate marking and base recalibration steps. The GATK requires several read group fields to be present in input files and will fail with errors if this requirement is not satisfied. More on the fields can be found here[1]
+These tags, when assigned appropriately, allow to differentiate not only samples, but also various technical features that are associated with artifacts. With this information in hand, it can mitigate the effects of those artifacts during the duplicate marking and base recalibration steps. The GATK requires several read group fields to be present in input files and will fail with errors if this requirement is not satisfied. More on the fields can be found [here][1]
 ```
 samtools view -H sample.bam | grep '^@RG'
 ```
@@ -24,4 +24,4 @@ samtools view -H sample.bam | grep '^@RG'
 2. https://sites.google.com/a/broadinstitute.org/legacy-gatk-forum-discussions/tutorials/6484-how-to-generate-an-unmapped-bam-from-fastq-or-aligned-bam
 
 
-[1]https://gatk.broadinstitute.org/hc/en-us/articles/360035890671-Read-groups
+[1]: https://gatk.broadinstitute.org/hc/en-us/articles/360035890671-Read-groups
