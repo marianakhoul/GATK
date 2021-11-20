@@ -13,4 +13,6 @@ If you have raw read data in BAM format with appropriate assigned read group fil
 ### Convert aligned BAM to uBAM and discard problematic records using RevertSam
 
 ### Reference
-https://gatk.broadinstitute.org/hc/en-us/articles/360039568932--How-to-Map-and-clean-up-short-read-sequence-data-efficiently
+1. https://gatk.broadinstitute.org/hc/en-us/articles/360039568932--How-to-Map-and-clean-up-short-read-sequence-data-efficiently
+
+2. https://sites.google.com/a/broadinstitute.org/legacy-gatk-forum-discussions/tutorials/6484-how-to-generate-an-unmapped-bam-from-fastq-or-aligned-bam
