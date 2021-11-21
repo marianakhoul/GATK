@@ -6,10 +6,15 @@ It is a collection of command-line tools for analyzing high-throughput seqiencin
 This page contains the GATK best practice pipelines.
 
 Order of process
-1. Map and clean up short read sequence data effectively
-2. Data pre-processing for variant discovery
+1. [Map and clean up short read sequence data effectively][1]
+2. [Data pre-processing for variant discovery][2]
 
 Downloading [https://gatk.broadinstitute.org/hc/en-us/articles/360036194592-Getting-started-with-GATK4]
+
+
+[1]: https://github.com/marianakhoul/GATK/tree/main/Map%20and%20clean%20up%20short%20read%20sequence%20data%20efficiently
+
+[2]: https://github.com/marianakhoul/GATK/tree/main/Data%20pre-processing%20for%20variant%20discovery
 
 
 ## References
