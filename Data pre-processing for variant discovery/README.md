@@ -41,6 +41,8 @@ BQSR stands for Base Quality Score Recalibration. In a nutshell, it is a data pr
 
 Tools involved are BaseRecalibrator, Apply Recalibration, AnalyzeCovariates(optional). AnalyzeCovariates creates plots and analysis.
 
+Known site files can be found [here][2].
+
 Workflow
 ```
 gatk BaseRecalibrator \
@@ -60,6 +62,9 @@ Output bam is ready for analysis.
 
 
 [1]: https://github.com/marianakhoul/GATK/tree/main/Map%20and%20clean%20up%20short%20read%20sequence%20data%20efficiently
+
+[2]: https://gatk.broadinstitute.org/hc/en-us/community/posts/360067731871-Input-Known-site-files-for-BQSR
+
 
 ### Referencess
 1. https://gatk.broadinstitute.org/hc/en-us/articles/360035890531-Base-Quality-Score-Recalibration-BQSR-
