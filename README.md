@@ -11,7 +11,14 @@ Order of process
 
 Downloading [https://gatk.broadinstitute.org/hc/en-us/articles/360036194592-Getting-started-with-GATK4]
 
-
+## Optimizations for code --java-options
+Java heap size
+```
+ -Xms - set initial Java heap size
+ -Xmx - set maximum Java heap size
+ -Xss - set java thread stack size
+```
+-Xms4000m means the initial heap size will be 4Gb and this helps to not readjust later on.
 
 
 
