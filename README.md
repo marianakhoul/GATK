@@ -5,6 +5,28 @@ It is a collection of command-line tools for analyzing high-throughput seqiencin
 
 This page contains the GATK best practice pipelines.
 
+## Reference data pre-processing
+Download Hg38 Reference Genome and unzip it
+```
+wget http://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz
+gunzip hg38.fa.gz
+```
+BWA requires an idenxed reference genome. This step will produce 5 files (amb, ann, bwt, pac and sa) needed for the alignment of the reads to the genome.
+-a (algorithm) use bwtsw which works for most genomes unless they are under a certain size.
+```
+bwa index -a bwtsw hg38.fa or bwa index hg38.fa
+```
+Create sequence dictionary using the Picard tool CreateSequenceDictionary.jar.
+The tool will create and name the output as hg38.dict.
+```
+java -jar CreateSequenceDictionary.jar \
+REFERENCE=hg38.fa
+```
+Index the reference genome using samtools
+```
+samtools faidx hg38.fa
+```
+
 Order of process
 1. [Map and clean up short read sequence data effectively](https://github.com/marianakhoul/GATK/tree/main/Map%20and%20clean%20up%20short%20read%20sequence%20data%20efficiently)
 2. [Data pre-processing for variant discovery](https://github.com/marianakhoul/GATK/tree/main/Data%20pre-processing%20for%20variant%20discovery)
